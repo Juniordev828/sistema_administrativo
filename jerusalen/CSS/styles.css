@@ -44,7 +44,7 @@ body {
     text-decoration: none; /* Quitar el subrayado predeterminado */
     font-weight: bold;
     font-size: 1.8rem; /* Tamaño de fuente para los enlaces */
-    background-color: #3c9bb3; /* Verde oscuro para los botones de navegación */
+    background-color: #3c48b3; /* Verde oscuro para los botones de navegación */
     padding: 12px 20px; /* Padding interno de cada botón de navegación */
     border-radius: 8px; /* Bordes ligeramente redondeados */
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transición suave al hover */
