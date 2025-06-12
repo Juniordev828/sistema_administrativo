@@ -15,7 +15,7 @@ body {
 /* Estilos para el Título Principal (h1) */
 .titulo { /* Usamos la clase para el h1, es más específico */
     text-align: center;
-    background-color: #28a745; /* Un verde más estándar, puedes usar 'green' si prefieres */
+    background-color: #28a739; /* Un verde más estándar, puedes usar 'green' si prefieres */
     color: white;
     padding: 30px 20px; /* Arriba/abajo: 30px, izquierda/derecha: 20px */
     margin: 0; /* Elimina márgenes extra si está dentro de un header sin padding */
@@ -24,37 +24,87 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-/* Estilos para la barra de navegación principal */
 .navegacion-principal1 {
-    background-color: #3c9bb3; /* Un verde medio para la barra de navegación */
-    display: flex; /* Para que los enlaces se pongan en fila */
-    flex-wrap: wrap; /* Permite que los elementos salten de línea en pantallas pequeñas */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espacio entre los enlaces */
-    padding: 15px 10px; /* Padding interno de la barra de navegación */
-    margin-bottom: 30px; /* Un poco de espacio debajo de la navegación */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sutil sombra para profundidad */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 40px; /* espacio entre botones */
+  justify-content: center; /* centra el grid horizontalmente */
+  align-items: center;
+  padding: 40px;
+  background-color: #3da7c2; /* azul de fondo (ajustá según tu diseño) */
+}
+.contenedor-botones {
+  display: flex;
+  gap: 20px; /* separa los botones */
+  justify-content: center; /* centra horizontalmente */
+  margin-top: 20px;
 }
 
-/* Estilos para los enlaces dentro de la navegación principal1 */
-/* Corregido: .navegacion-principal1 a, no navegacion-principaL2 */
-.navegacion-principal1 a {
-    color: white;
-    text-decoration: none; /* Quitar el subrayado predeterminado */
-    font-weight: bold;
-    font-size: 1.8rem; /* Tamaño de fuente para los enlaces */
-    background-color: #3c48b3; /* Verde oscuro para los botones de navegación */
-    padding: 12px 20px; /* Padding interno de cada botón de navegación */
-    border-radius: 8px; /* Bordes ligeramente redondeados */
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transición suave al hover */
-    text-transform: uppercase; /* Convertir a mayúsculas para coherencia */
+.botonpago,
+.botonventa {
+  height: 4cm;        /* ← AQUÍ se ajusta el alto exacto */
+  width: auto;        /* o fija un ancho si quieres */
+  font-size: 16px;
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;   
 }
 
-.navegacion-principal1 a:hover {
-    background-color: #3c9bb3; /* Un verde aún más oscuro al pasar el mouse */
-    transform: translateY(-2px); /* Efecto ligero de "elevación" */
+.botonpago:hover,
+.botonventa:hover {
+  background-color: #1b2db9;
 }
+
+.icono-pago{
+margin-top: 8px; /*separa la imagen del texto*/
+width: 24px;
+height: auto;
+}
+
+.boton:hover {
+  transform: scale(1.05);
+  background-color: #1e2ec0;
+}
+
+.botonmercaderia,
+.botonreportes{
+  height: 4cm;        /* ← AQUÍ se ajusta el alto exacto */
+  width: auto;        /* o fija un ancho si quieres */
+  font-size: 16px;
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;   
+}
+
+.botonmercaderia:hover,
+.botonreportes:hover {
+  background-color: #1bb9ae;
+}
+.botonmercaderia:hover {
+  transform: scale(1.08);
+  background-color: #1ec0aa;
+  height: 4cm;
+  }
+
+  .contenedor-botones2{
+  display: flex;
+  gap: 20px; /* separa los botones */
+  justify-content: center; /* centra horizontalmente */
+  margin-top: 20px;
+height: 4cm;}
+  
 
 /* Adaptación a móviles */
 @media (max-width: 768px) { /* Usar 768px como breakpoint es común para tablets */
